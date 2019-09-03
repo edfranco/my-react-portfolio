@@ -1,0 +1,19 @@
+.about{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height:80vh;
+}
+
+section.about-me {
+    margin: 5% 5% 5% 2%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  section.fun-facts {
+    margin: 15% 5% 5% 2%;
+    padding-left: 15%;
+    border-left: 1px solid black;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }

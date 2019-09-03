@@ -1,0 +1,48 @@
+.ga,
+.ccsf {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+.resume {
+  grid-column-start: 3;
+  grid-column-end: 1;
+  margin: 5% 5% 5% 2%;
+}
+
+.resume h2 {
+  font-size: 1.75rem;
+  padding-bottom: 1%;
+}
+
+.resume p {
+  padding-bottom: 5%;
+}
+
+.work-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .project-container {
+  width: 50vw;
+  height: 50vh;
+  margin-bottom: 5em;
+}
+
+.project-header{
+  font-size: 2rem;
+}
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.resume img {
+  width: 40vw;
+  height: 30vh;
+}

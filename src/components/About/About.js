@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './About.css'
+
 const About = () => {
     return (
-        <div>
-            <section className="about" id="about">
+        <div className="about">
+            <section className="about-me" id="about-me">
                 <h2 className="div-headers">About Eduardo</h2>
                 <p>I was born in Guadalajara, Jalisco, Mexico on February 27, 1997. At the age of five I moved to San
                     Francisco, Ca with my parents to start a new life. One day I was playing video games and I wondered how

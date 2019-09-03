@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 // internal components
 import ContactErrors from './ContactErrors';
 
 import './Contact.css';
+
+import { MY_SERVER } from '../../constants/constants';
 
 class Contact extends Component {
     state = {
         email: '',
         subject: '',
         message: '',
+        name: '',
         hasMessageSent: false,
         emailSubmitted: '',
         errors: []
@@ -16,6 +20,18 @@ class Contact extends Component {
 
     resetForm = () => {
         this.setState({ hasMessageSent: false });
+    };
+
+    sendEmail = () => {
+        axios.post(`${MY_SERVER}/contact`, {
+            email: this.state.email,
+            subject: this.state.subject,
+            message: this.state.message,
+            name: this.state.name,
+        }, { withCredentials: true }
+        )
+            .then(response => console.log(response))
+            .catch(error => console.log(error.response));
     };
 
     handleChange = event => {
@@ -37,6 +53,7 @@ class Contact extends Component {
         if (this.state.errors.length) {
             return this.setState({ hasMessageSent: false });
         } else {
+            this.sendEmail();
             this.setState({ hasMessageSent: true, emailSubmitted: this.state.email });
         };
     };
@@ -54,6 +71,9 @@ class Contact extends Component {
                                 onClick={this.resetForm} > here</span> to reset</p>
                     </div>
                     : <form>
+                        <label>Name</label>
+                        <input id="name" onChange={this.handleChange} name="name" type="text" value={this.state.name} placeholder="Your name..." />
+
                         <label>Email</label>
                         <input id="email" onChange={this.handleChange} name="email" type="text" value={this.state.email} />
 

@@ -6,7 +6,10 @@ import './Aside.css';
 const Aside = ({ projects }) => {
     const projectsLinks = projects.map(project => {
         return (
-            <Link key={project.key} to={`/project/${project.name}`} >{project.name}</Link>
+            <div className="link-card" >
+                <Link key={project.key} to={`/project/${project.name}`} >{project.name}</Link>
+                <p>Languages used: {project.techUsed} </p>
+            </div>
         )
     })
 
