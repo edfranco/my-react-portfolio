@@ -1,0 +1,38 @@
+nav {
+    position: relative;
+    width: 100%;
+}
+
+nav h1,
+nav h3 {
+    padding: 1% 0 0 3%;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav h1:after {
+    content: "";
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 1px;
+}
+
+nav li {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    margin: 2%;
+}
+
+nav li:hover {
+    color: rgb(114, 114, 114);
+}
+
+nav a {
+    text-decoration: none;
+}

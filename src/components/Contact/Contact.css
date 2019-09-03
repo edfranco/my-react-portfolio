@@ -1,0 +1,32 @@
+.contact{
+    height:80vh;
+    padding-left: 8em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+input{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+
+#message{
+    height:20em;
+}
+
+button{
+    height: 5em;
+    width: 10em;
+    background-color: rgb(240, 169, 169);
+    border-radius: 2em;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(245, 208, 208);
+}

@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header img{
+    width: 25em;
+    height: 15em;
+}
+

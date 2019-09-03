@@ -1,0 +1,9 @@
+.aside{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
