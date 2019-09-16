@@ -1,5 +1,7 @@
 .content{
     grid-column-start: 2;
     grid-column-end: 3;
-    height:100vh;
+    height:90vh;
+    margin: 1em;
+    margin-right:10em; 
 }

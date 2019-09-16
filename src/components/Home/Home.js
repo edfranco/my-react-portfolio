@@ -18,7 +18,7 @@ const Home = () => {
                 </p>
 
                 <p>Since the age of 17 Eduardo taught himself to code using technologies such as
-                    HTML, CSS, Python and JavaScript in noth front-end and back-end disciplines.
+                    HTML, CSS, Python and JavaScript in both front-end and back-end disciplines.
                     Other hobbies include reading about history, learning about
                     geography, writing in different
                 genres, and doing stand up comedy.</p>

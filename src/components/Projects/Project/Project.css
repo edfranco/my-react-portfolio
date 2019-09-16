@@ -9,3 +9,17 @@
     height: 15em;
 }
 
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a{
+    color: black;
+}
+
+.description p{
+    margin: 2em 0;
+    line-height: 1.5em;
+}
+
