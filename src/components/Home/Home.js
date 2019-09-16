@@ -6,29 +6,22 @@ const Home = () => {
     return (
         <div className="home">
             <section className="home-items">
-                <h2 className="div-headers">Cover Letter</h2>
+                <h2 className="div-headers">About Eduardo</h2>
                 <p>
-                    I am interested in being a developer for your company.
-                    <br /><br />
-                    I have 4 years of
-                    self-taught skills compounded with formal education from General Assembly's Software Development
-                    program. On top of that I have experience
-                    building websites for for self-found clientele. I have taught myself HTML, CSS, and JavaScript and
-                    have learned how to use their frameworks such as Node, Jquery, React, whilst also creating RESTful
-                    API.
-                    <br /><br />
-                    I have been working as an educator and in customer service for 4 years now.
-                    I have worked with people of different age groups in different capacities, wether it be families
-                    whilst a high school explainer, foreign tourists in the stores, school children on field trips,
-                    businesspeople during rentals events,
-                    and visitors trying to buy tickets so I bring a perspective not many other people have. I feel a
-                    strength of mine lies in being flexible in my manner of presenting museum exhibits and
-                    demonstrations.I always try to give new, relevant,
-                    and unique information to teach new skills to people in fun and unusual ways.
-                    <br /><br />
-                    I want to be a developer for your team so I can help with the mission while finding a
-                    great professional outlet for my creative work.
+                    Eduardo is a full-stack developer with experience
+                    teaching in a museum setting. As a former educator,
+                    Eduardo values openness in the workplace to help promote a
+                    healthy work culture. He also understands the value of mistakes
+                    and how they help people grow professionally and mentally. He tries
+                    to find different ways to find solutions and he is quick to
+                    share his knowledge with his peers.
                 </p>
+
+                <p>Since the age of 17 Eduardo taught himself to code using technologies such as
+                    HTML, CSS, Python and JavaScript in noth front-end and back-end disciplines.
+                    Other hobbies include reading about history, learning about
+                    geography, writing in different
+                genres, and doing stand up comedy.</p>
             </section>
 
 

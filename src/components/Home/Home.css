@@ -8,6 +8,11 @@ section.home-items{
     grid-column-end: 2;
 }
 
+section.home-items p{
+    line-height: 1.5em;
+    margin: 1em;
+}
+
 aside.home-items {
     grid-column-start: 2;
     grid-column-end: 3;

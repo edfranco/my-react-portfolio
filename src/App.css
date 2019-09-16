@@ -4,7 +4,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(196, 195, 195));
+  background:whitesmoke;
   font-family: sans-serif;
   text-align: none;
   color: black;
@@ -21,7 +21,7 @@ main {
 }
 
 .div-headers {
-  color: white;
+  color: rgb(255, 125, 125);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 

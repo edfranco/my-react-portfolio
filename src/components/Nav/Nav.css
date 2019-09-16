@@ -1,6 +1,8 @@
 nav {
     position: relative;
     width: 100%;
+    background-image: linear-gradient(to right, rgb(255, 125, 125),rgb(255, 175, 155));
+    color: white;
 }
 
 nav h1,
@@ -24,13 +26,13 @@ nav h1:after {
 
 nav li {
     display: inline-block;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     margin: 2%;
 }
 
 nav li:hover {
-    color: rgb(114, 114, 114);
+    color: rgb(69, 69, 69);
 }
 
 nav a {
