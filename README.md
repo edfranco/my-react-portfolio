@@ -1,4 +1,5 @@
-You can find my portfolio[here](http://eduardofranco.me).
+You can find my portfolio [here](http://eduardofranco.me).
+
 The server repo can be found here [food-envy backend](https://github.com/edfranco/foodenvy-backend).
 
 ## eduardofranco.me
