@@ -13,7 +13,8 @@ class PortfolioContainer extends Component {
     state = {
         isProjectDisplayed: false,
         projects: PROJECTS,
-        projectAsProp: null
+        projectAsProp: null,
+        project: PROJECTS[0]
     };
 
     componentDidMount() {
@@ -44,7 +45,7 @@ class PortfolioContainer extends Component {
                 <Aside
                     projects={this.state.projects}
                     setIsProjectDisplayed={this.setIsProjectDisplayed} />
-                <Projects project={this.state.projectAsProp} />
+                <Projects project={this.state.projectAsProp} defaultProject={this.state.project} />
             </div>
         );
     };
