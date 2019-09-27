@@ -5,8 +5,9 @@ import './Nav.css'
 const Nav = () => {
     return (
         <nav>
-            <h1>Eduardo Franco</h1>
-            <h3>Fullstack Developer | Educator</h3>
+            <div>
+                <h1>Eduardo Franco</h1>
+            </div>
 
             <ul>
                 <div className="nav-links">

@@ -1,9 +1,18 @@
-import wayfarer from '../images/wayfarer.png';
+import mySite from '../images/my-site.png';
 import hikr from '../images/hikr.png';
 import fieldr from '../images/fieldr.png';
 import foodenvy from '../images/foodenvy.png';
 
 export const PROJECTS = [
+    {
+        key: 0,
+        name: 'My Portfolio',
+        content: "This website itself was built using React. I used flexbox and grid to style for the CSS. I also have a very simple server deployed on heroku that is used to send messages from this site's contact form to my personal email",
+        image: mySite,
+        techUsed: 'React, Node, Nodemailer.js,heroku',
+        github: 'https://github.com/edfranco/my-react-portfolio',
+        deployed: 'http://eduardofranco.me'
+    },
     {
         key: 1,
         name: 'Fieldr',
@@ -11,7 +20,7 @@ export const PROJECTS = [
         image: fieldr,
         techUsed: 'HTML, CSS, JavaScript, Node, Express, Mongoose, Fetch',
         github: 'https://github.com/edfranco/fieldr',
-        deployed: 'https://edfranco.github.io/login'
+        deployed: 'https://gofieldr.herokuapp.com/'
     },
     {
         key: 2,
@@ -24,15 +33,6 @@ export const PROJECTS = [
     },
     {
         key: 3,
-        name: 'Wayfarer',
-        content: 'A full stack app built with React and Node, Express and Mongoose for the back-end.',
-        image: wayfarer,
-        techUsed: 'React, Node, Express, Mongoose, Axios',
-        github: 'https://github.com/edfranco/wayfarer',
-        deployed: 'https://edfranco.github.io/login'
-    },
-    {
-        key: 4,
         name: 'FoodEnvy',
         content: 'A social media site built over 7 days. This site was built using the MERN stack. This site is built upon users posting photos of food they ate and what restaurant they ate it at. These restauarants have a profile as well that show all their posts',
         image: foodenvy,

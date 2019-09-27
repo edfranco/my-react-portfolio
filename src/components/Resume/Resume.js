@@ -1,10 +1,15 @@
 import React from 'react';
 
 import './Resume.css';
+import resume from '../../files/resume.docx';
 
 const Resume = () => {
     return (
         <section className="resume" id="resume">
+            <div className="resume-top">
+                <h1 className="div-headers">Resume</h1>
+                <a href={resume} download>Download</a>
+            </div>
             <h2 className="div-headers">Education</h2>
             <div className="ga">
                 <h5>General Assembly</h5>

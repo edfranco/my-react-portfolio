@@ -1,3 +1,9 @@
+.resume-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .ga,
 .ccsf {
   display: flex;
