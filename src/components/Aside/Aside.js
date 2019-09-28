@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import './Aside.css';
 
-const Aside = ({ projects }) => {
+const Aside = ({ projects, displayMenu }) => {
     const projectsLinks = projects.map(project => {
         return (
             <div className="link-card" >
@@ -17,9 +17,14 @@ const Aside = ({ projects }) => {
     })
 
     return (
-        <div className="aside">
-            {projectsLinks}
-        </div>
+        <>
+            <div className="aside">
+                {projectsLinks}
+            </div>
+            <div className="mobile-links" style={displayMenu ? { display: 'block' } : { display: 'none' }}>
+                {projectsLinks}
+            </div>
+        </>
     );
 };
 

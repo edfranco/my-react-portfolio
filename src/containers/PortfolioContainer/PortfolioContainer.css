@@ -2,6 +2,13 @@
     display: grid;
     grid-template-columns: 2fr 3fr;
 }
+.see-more{
+    display: none;
+}
+
+.mobile-links{
+    display: none;
+}
 
 @media only screen and (max-width: 768px) {
     .portfolio-container{
