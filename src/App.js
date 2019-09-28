@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // internal components
 import Nav from './components/Nav/Nav';
+import MobileMenu from './components/MobileMenu/MobileMenu';
 import Routes from './config/Router';
 import './App.css';
 
@@ -19,10 +20,7 @@ class App extends Component {
     return (
       <div className="App">
         <Nav handleClick={this.handleClick} />
-        <div className="mobile-menu" style={this.state.displayMenu ? { display: 'block' } : { display: 'none' }}>
-          <h1>Menu</h1>
-          <h1 onClick={this.handleClick}>X</h1>
-        </div>
+        <MobileMenu handleClick={this.handleClick} displayMenu={this.state.displayMenu} />
         <main>
           <Routes />
         </main>
