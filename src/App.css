@@ -46,25 +46,21 @@ aside.home-items img {
       align-items: center;
       justify-content: flex-start;
   }
-  nav {
-      background-color: rgb(209, 207, 207);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: space-between;
-      border: none;
+
+  .mobile-menu{
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    width: 50vw;
+    opacity: .5;
+    color: white;
   }
-  .nav-links a {
-      color: white;
-      font-size: 2em;
-  }
-  nav ul {
-      border-bottom: 1px solid black;
-  }
+  
   main {
       display: flex;
       flex-direction: column;
   }
+  
 
   .resume .project-container {
       display: flex;
