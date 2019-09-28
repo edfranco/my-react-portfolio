@@ -24,9 +24,24 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .project{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .links h1{
+        font-size: 1.2em;
+    }
+    
     .header img{
-        width: 10em;
+        width: 15em;
         height: 10em;
+    }
+
+    .description{
+        margin: 0 3em;
     }
 }
 

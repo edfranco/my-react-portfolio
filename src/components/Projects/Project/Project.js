@@ -4,7 +4,7 @@ import './Project.css';
 
 const Project = ({ project: { name, image, content, github, deployed } }) => {
     return (
-        <>
+        <div className="project">
             <div className="header">
                 <div className="links">
                     <h1>{name}</h1>
@@ -21,7 +21,7 @@ const Project = ({ project: { name, image, content, github, deployed } }) => {
                     Deploy this app <a href={deployed} >here</a>
                 </div>
             </div>
-        </>
+        </div>
 
     );
 };
