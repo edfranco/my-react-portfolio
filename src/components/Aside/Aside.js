@@ -11,7 +11,7 @@ const Aside = ({ projects, displayMenu }) => {
                     <Link key={project.key} to={`/project/${project.name}`} >{project.name}</Link>
                     <img src={project.image} alt="link thumbnail" />
                 </div>
-                <p>Languages used: {project.techUsed} </p>
+                <p>Technologies used: {project.techUsed} </p>
             </div>
         )
     })

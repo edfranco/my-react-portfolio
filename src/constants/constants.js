@@ -9,7 +9,7 @@ export const PROJECTS = [
         name: 'My Portfolio',
         content: "This website itself was built using React. I used flexbox and grid to style for the CSS. I also have a very simple server deployed on heroku that is used to send messages from this site's contact form to my personal email. The github link will send you to a readme and that will link my server repo as well",
         image: mySite,
-        techUsed: 'React, Node, Nodemailer.js,heroku',
+        techUsed: 'React, Node, Nodemailer, Heroku',
         github: 'https://github.com/edfranco/my-react-portfolio',
         deployed: 'http://eduardofranco.me'
     },

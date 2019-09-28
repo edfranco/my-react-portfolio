@@ -8,8 +8,8 @@
     justify-content: flex-start;
     align-items: center;
     overflow: scroll;
-    margin: 1em;
-    padding: 1em;
+    margin: .5em .1em;
+    padding: .1em;
 }
 
 .link-card{
@@ -62,15 +62,15 @@
     align-items: center;
 }
 .link-card{
-    width: 1.5em;
-    height:1em;
+    width: 5em;
+    height:6em;
     border-radius: .1em; 
-    margin-bottom: .2em;
+    margin-bottom: .7em;
     opacity: 1;
 }
 
 .link-card a{
-    font-size: .1em;
+    font-size: .5em;
     margin: 0;
 }
 

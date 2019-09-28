@@ -82,7 +82,9 @@ class Contact extends Component {
 
                         <label>Message</label>
                         <input id="message" onChange={this.handleChange} name="message" type="text" value={this.state.message} />
-                        <button onClick={this.handleSubmit}>Send</button>
+                        <div className="form-button-spacer">
+                            <button onClick={this.handleSubmit}>Send</button>
+                        </div>
                     </form>
                 }
             </div>
