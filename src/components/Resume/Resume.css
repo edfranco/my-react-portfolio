@@ -11,12 +11,6 @@
   margin-bottom: 1%;
 }
 
-.resume {
-  grid-column-start: 3;
-  grid-column-end: 1;
-  margin: 5% 5% 5% 2%;
-}
-
 .resume h2 {
   font-size: 1.75rem;
   padding-bottom: 1%;
@@ -29,6 +23,10 @@
 .work-container {
   display: flex;
   justify-content: space-between;
+}
+
+.resume-top{
+  margin: 1em 0;
 }
 
 .resume .project-container {
@@ -51,4 +49,11 @@
 .resume img {
   width: 40vw;
   height: 30vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .resume {
+    margin: 3em 1em;
+  }
+
 }

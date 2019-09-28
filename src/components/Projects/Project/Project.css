@@ -23,3 +23,10 @@
     line-height: 1.5em;
 }
 
+@media only screen and (max-width: 768px) {
+    .header img{
+        width: 10em;
+        height: 10em;
+    }
+}
+

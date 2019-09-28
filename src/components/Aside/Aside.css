@@ -47,3 +47,11 @@
     height:10vh;
     width: 10vw;
 }
+
+
+@media only screen and (max-width: 768px) {
+.aside{
+    display: none;
+}
+
+}
