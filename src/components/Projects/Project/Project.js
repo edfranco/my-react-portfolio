@@ -21,6 +21,9 @@ const Project = ({ project: { name, image, content, github, deployed } }) => {
                     Deploy this app <a href={deployed} >here</a>
                 </div>
             </div>
+
+
+
         </div>
 
     );

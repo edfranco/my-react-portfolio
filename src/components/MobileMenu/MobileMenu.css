@@ -34,4 +34,5 @@ justify-content: flex-start;
 
 .mobile-links li{
     padding: 0.1em 0;  
+    list-style: none;
 }

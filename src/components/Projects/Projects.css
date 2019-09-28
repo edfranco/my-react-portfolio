@@ -2,8 +2,7 @@
     grid-column-start: 2;
     grid-column-end: 3;
     height:90vh;
-    margin: 1em;
-    margin-right:10em; 
+    margin: 1em 2em;
 }
 
 @media only screen and (max-width: 768px) {
