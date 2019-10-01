@@ -50,7 +50,7 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 .aside{
     display: none;
 }
@@ -62,7 +62,7 @@
     align-items: center;
 }
 .link-card{
-    width: 5em;
+    width: 80%;
     height:6em;
     border-radius: .1em; 
     margin-bottom: .7em;
@@ -72,13 +72,15 @@
 .link-card a{
     font-size: .5em;
     margin: 0;
+    padding: 0;
 }
 
 .link-card p{
-    font-size: 0.02em
+    font-size: 0.1em;
+    padding:1em;
 }
 .link-header img{
-    height:7vh;
-    width: 30vw;
+    width: 85%;
+    max-height:70%;
 }
 }

@@ -39,31 +39,36 @@ class Contact extends Component {
     };
 
     handleSubmit = event => {
-        this.setState({ errors: [] })
         event.preventDefault();
-        if (this.state.email === '' || !this.state.email.includes('@')) {
-            this.setState({ errors: [...this.state.errors, { id: 0, message: 'please enter a valid email' }] });
+        this.setState({ errors: [] })
+        if (!this.state.name) {
+            this.setState({ errors: [...this.state.errors, { id: 0, message: 'please enter a name' }] });
         };
-        if (this.state.subject === '') {
-            this.setState({ errors: [...this.state.errors, { id: 1, message: 'please enter a subject' }] });
+        if (!this.state.email || !this.state.email.includes('@')) {
+            this.setState({ errors: [...this.state.errors, { id: 1, message: 'please enter a valid email' }] });
         };
-        if (this.state.message === '') {
-            this.setState({ errors: [...this.state.errors, { id: 2, message: 'please enter a message' }] });
+        if (!this.state.subject) {
+            this.setState({ errors: [...this.state.errors, { id: 2, message: 'please enter a subject' }] });
+        };
+        if (!this.state.message) {
+            this.setState({ errors: [...this.state.errors, { id: 3, message: 'please enter a message' }] });
         };
         if (this.state.errors.length) {
-            return this.setState({ hasMessageSent: false });
-        } else {
+            this.setState({ hasMessageSent: false });
+        };
+        if (!this.state.errors.length) {
             this.sendEmail();
             this.setState({ hasMessageSent: true, emailSubmitted: this.state.email });
         };
     };
+
 
     render() {
         return (
             <div className="contact">
                 {this.state.errors.length !== 0 && <ContactErrors errors={this.state.errors} />}
                 {this.state.hasMessageSent
-                    ? <div>
+                    ? <div className="success-message">
                         <h1>Message has been sent with email {this.state.emailSubmitted}</h1>
                         <p>If this email is incorrect click
                             <span

@@ -62,5 +62,13 @@ button:hover{
         background-color: rgb(240, 169, 169);
         border-radius: 2em;
     }
+
+    .success-message{
+        padding: 2em;
+    }
+
+    .success-message h1{
+        font-size: 1em;
+    }
   
   }

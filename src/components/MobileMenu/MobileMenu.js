@@ -7,8 +7,8 @@ const MobileMenu = ({ displayMenu, handleClick }) => {
     return (
         <div className="mobile-menu" style={displayMenu ? { display: 'block' } : { display: 'none' }}>
             <div className="mobile-layout">
-                <div className="mobile-header">
-                    <h1 onClick={handleClick}>X</h1>
+                <div className="exit-button">
+                    <div className="exit-button-icon" onClick={handleClick}>x</div>
                 </div>
 
                 <ul className="mobile-nav-links">

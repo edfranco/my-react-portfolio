@@ -7,9 +7,13 @@ const MobilePortfolioMenu = ({ handleClick, displayMenu }) => {
     return (
         <div className="mobile-menu mobile-portfolio-menu"
             style={displayMenu ? { display: 'block' } : { display: 'none' }} >
-            <div>
-                <h1 onClick={handleClick}>x</h1>
-                <Aside handleClick={handleClick} displayMenu={displayMenu} projects={PROJECTS} />
+            <div className="portfolio-menu">
+                <div className="exit-button">
+                    <div onClick={handleClick}>x</div>
+                </div>
+                <div className="cards-layout">
+                    <Aside handleClick={handleClick} displayMenu={displayMenu} projects={PROJECTS} />
+                </div>
             </div>
         </div>
     );
