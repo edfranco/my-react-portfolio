@@ -62,7 +62,7 @@ class PortfolioContainer extends Component {
                         handleClick={this.handleClick}
                         displayMenu={this.state.displayMenu} />
                 </div>
-                <button style={this.state.displayButton ? { display: 'block' } : { display: 'none' }} onClick={this.handleClick} className="see-more">See more projects</button>
+                <button onClick={this.handleClick} className="see-more">See more projects</button>
             </>
         );
     };

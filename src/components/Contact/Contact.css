@@ -1,16 +1,17 @@
 .contact{
     height:80vh;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.email-form{
+    padding: 0 1em;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-start;
 }
 
@@ -44,6 +45,8 @@ button:hover{
 @media only screen and (max-width: 768px) {
     .contact {
         margin: 5em 0;
+        display: flex;
+        flex-direction: column;
     }
     
     input{

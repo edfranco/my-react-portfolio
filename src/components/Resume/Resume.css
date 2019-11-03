@@ -1,14 +1,15 @@
+.resume{
+  margin: 0 2em;
+}
+
+.resume ul{
+  padding: 1em;
+}
+
 .resume-top{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.ga,
-.ccsf {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1%;
 }
 
 .resume h2 {

@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../images/headshot.jpg'
+
 import './Home.css'
 
 const Home = () => {
@@ -23,18 +23,6 @@ const Home = () => {
                     geography, writing in different
                 genres, and doing stand up comedy.</p>
             </section>
-
-
-            <aside className="home-items" id="contact">
-                <h2 className="div-headers">Contact Information</h2>
-
-                <img src={image} alt="eduardo-franco-cutie-headshot" />
-
-                <h5>Phone: </h5>
-                <p>415-606-0887</p>
-                <h5>email: </h5>
-                <p>ed@eduardofranco.me</p>
-            </aside>
         </div>
     );
 };

@@ -9,7 +9,8 @@ import PortfolioContainer from '../containers/PortfolioContainer/PortfolioContai
 const Routes = () => {
     return (
         <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={PortfolioContainer} />
+            <Route path="/about" component={Home} />
             <Route path="/resume" component={Resume} />
             <Route path="/contact" component={Contact} />
             <Route path="/portfolio" component={PortfolioContainer} />

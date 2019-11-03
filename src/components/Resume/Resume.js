@@ -10,6 +10,42 @@ const Resume = () => {
                 <h1 className="div-headers">Resume</h1>
                 <a href={resume} download>Download</a>
             </div>
+
+            <h2 className="div-headers">Work History</h2>
+            <h5>Techqueria</h5>
+            <div className="work-container">
+                <h6>Open-Source Contributor</h6>
+                <h6>October 2019-</h6>
+            </div>
+            <p>Techqueria is a 501c3 nonprofit serving the largest community for Latinx in Tech.
+                <br />
+                <br />
+                - Contributed to their open source website by adding events and new features.
+            </p>
+            <h5>Exploratorium</h5>
+            <div className="work-container">
+                <h6>Field Trip Explainer</h6>
+                <h6>October 2018- May 2019</h6>
+            </div>
+            <ul>
+                <li>Facilitated orientations for an average of 120 children a day.</li>
+                <li>Routinely led scientific demonstrations for crowds of about 100 people.</li>
+                <li>Trained peers on niche scientific topics in an engaging and informational manner.</li>
+            </ul>
+
+
+            <div className="work-container">
+                <h6>Guest Services Associate</h6>
+                <h6>May 2017- May 2019</h6>
+            </div>
+            <ul>
+                <li>Provided customer service, sold products including museum memberships in a museum with a daily average customer flow of 2500+ visitors.</li>
+                <li>Earned 2nd highest total dollar amount of donations received in the 2017-18 fiscal year</li>
+                <li>Earned highest dollar amount of donation dollars to hours ratio</li>
+                <li>Earned highest total sales to hours worked ratio</li>
+                <li>Routinely earned the highest amount of donations on the Exploratorium’s Community Day (free day).</li>
+            </ul>
+
             <h2 className="div-headers">Education</h2>
             <div className="ga">
                 <h5>General Assembly</h5>
@@ -25,37 +61,7 @@ const Resume = () => {
                 <h5>City College of San Francisco</h5>
                 <h5>Computer Science </h5>
             </div>
-            <p>Went to school to learn computer science software and hardware fundamentals</p>
-            <h2 className="div-headers">Work History</h2>
-            <h5>Exploratorium</h5>
-            <div className="work-container">
-                <h6>Field Trip Explainer</h6>
-                <h6>October 2018- May 2019</h6>
-            </div>
-            <p>The role includes facilitating orientations for field trip groups, performing demonstrations on
-                scientific topics related to the museum and general museum customer service.
-            </p>
-            <div className="work-container">
-                <h6>Guest Services Associate</h6>
-                <h6>May 2017- May 2019</h6>
-            </div>
-            <p>My role includes giving excellent customer service, management of store product, communication among
-                coworkers to perform group tasks, and special projects.</p>
-            <div className="work-container">
-                <h6>Administrative Intern: Explainer Program</h6>
-                <h6>April 2016-May 2017</h6>
-            </div>
-            <p>Helping the supervisors run the explainer program by validating timecards, creating schedules for the
-                explainers, answering phone calls, and maintaining spreadsheets that hold important information for the
-                supervisors and training personnel
-                on special skills such as heart dissections, magic tricks, and other niche scientific topics.</p>
-            <div className="work-container">
-                <h6>High School Explainer</h6>
-                <h6>May 2015-April 2016</h6>
-            </div>
-            <p>Help guide guests around the museum, and give demonstrations on exhibits and scientific concepts. In
-                addition train new hires and additional refresher training.
-            </p>
+            <p>Completed 30 credits worth of classes based on general education while working towards a computer science AA</p>
         </section >
     );
 };

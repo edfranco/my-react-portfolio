@@ -14,8 +14,7 @@ nav {
 
 nav ul{
     display: flex;
-    justify-content: flex-start;
-    margin-right: 1em;
+    margin-right: 5em;
 }
 
 nav h1,
@@ -51,6 +50,24 @@ nav a {
     text-decoration: none;
 }
 
+.my-logo{
+    display: flex;
+    align-items: flex-end;
+}
+
+.my-logo *{
+    padding-right:0.5em;
+}
+
+.my-logo a{
+    color: white;
+}
+
+.my-logo i{
+    font-size: 3em;
+    padding-right:0.5em;
+}
+
 @media only screen and (max-width: 768px) {
     nav {
         width: 100vw;
@@ -64,6 +81,10 @@ nav a {
         padding: 0.5em 1em;
         position: fixed;
         opacity: .8;
+    }
+
+    .social-link {
+        display: none;
     }
     
     .nav-links a {

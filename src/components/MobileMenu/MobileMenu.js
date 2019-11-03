@@ -12,11 +12,8 @@ const MobileMenu = ({ displayMenu, handleClick }) => {
                 </div>
 
                 <ul className="mobile-nav-links">
-                    <NavLink to="/" onClick={handleClick}>
-                        <li>Home</li>
-                    </NavLink>
-                    <NavLink to="/portfolio" onClick={handleClick}>
-                        <li>Portfolio</li>
+                    <NavLink to="/abuot" onClick={handleClick}>
+                        <li>About</li>
                     </NavLink>
                     <NavLink to="/resume" onClick={handleClick}>
                         <li>Resume</li>

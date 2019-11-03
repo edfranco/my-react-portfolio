@@ -12,6 +12,11 @@
     padding: .1em;
 }
 
+.link-card-anchor{
+    text-decoration: none;
+    color: white;
+}
+
 .link-card{
     background-image: linear-gradient(to right, rgb(255, 125, 125),rgb(255, 175, 155));
     display: flex;
@@ -22,6 +27,8 @@
     border: 1px solid rgb(221, 221, 221);
     border-radius: 1em; 
     margin-bottom: 2em;
+    padding: .5em 0;
+
 }
 
 .link-card a, .link-card p{

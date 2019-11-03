@@ -6,13 +6,15 @@ import './Aside.css';
 const Aside = ({ projects, displayMenu }) => {
     const projectsLinks = projects.map(project => {
         return (
-            <div className="link-card" >
-                <div className="link-header">
-                    <Link key={project.key} to={`/project/${project.name}`} >{project.name}</Link>
-                    <img src={project.image} alt="link thumbnail" />
+            <Link className="link-card-anchor" key={project.key} to={`/project/${project.name}`} >
+                <div className="link-card" >
+                    <div className="link-header">
+                        {project.name}
+                        <img src={project.image} alt="link thumbnail" />
+                    </div>
+                    <p>Technologies used: {project.techUsed} </p>
                 </div>
-                <p>Technologies used: {project.techUsed} </p>
-            </div>
+            </Link>
         )
     })
 

@@ -7,6 +7,8 @@ import './Contact.css';
 
 import { MY_SERVER } from '../../constants/constants';
 
+import image from '../../images/headshot.jpg'
+
 class Contact extends Component {
     state = {
         email: '',
@@ -75,24 +77,38 @@ class Contact extends Component {
                                 style={{ cursor: 'pointer', color: 'blue' }}
                                 onClick={this.resetForm} > here</span> to reset</p>
                     </div>
-                    : <form>
-                        <label>Name</label>
-                        <input id="name" onChange={this.handleChange} name="name" type="text" value={this.state.name} placeholder="Your name..." />
+                    : <div className="email-form">
+                        <h2 className="div-headers">Talk to Me</h2>
+                        <form>
+                            <label>Name</label>
+                            <input id="name" onChange={this.handleChange} name="name" type="text" value={this.state.name} placeholder="Your name..." />
 
-                        <label>Email</label>
-                        <input id="email" onChange={this.handleChange} name="email" type="text" value={this.state.email} />
+                            <label>Email</label>
+                            <input id="email" onChange={this.handleChange} name="email" type="text" value={this.state.email} />
 
-                        <label>Subject</label>
-                        <input id="subject" onChange={this.handleChange} name="subject" type="text" value={this.state.subject} />
+                            <label>Subject</label>
+                            <input id="subject" onChange={this.handleChange} name="subject" type="text" value={this.state.subject} />
 
-                        <label>Message</label>
-                        <input id="message" onChange={this.handleChange} name="message" type="text" value={this.state.message} />
-                        <div className="form-button-spacer">
-                            <button onClick={this.handleSubmit}>Send</button>
-                        </div>
-                    </form>
+                            <label>Message</label>
+                            <input id="message" onChange={this.handleChange} name="message" type="text" value={this.state.message} />
+                            <div className="form-button-spacer">
+                                <button onClick={this.handleSubmit}>Send</button>
+                            </div>
+                        </form>
+                    </div>
                 }
+                <aside className="home-items" id="contact">
+                    <h2 className="div-headers">Contact Information</h2>
+
+                    <img src={image} alt="eduardo-franco-cutie-headshot" />
+
+                    <h5>Phone: </h5>
+                    <p>415-606-0887</p>
+                    <h5>email: </h5>
+                    <p>ed@eduardofranco.me</p>
+                </aside>
             </div>
+
         );
     };
 };
