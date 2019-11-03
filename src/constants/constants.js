@@ -2,6 +2,7 @@ import mySite from '../images/my-site.png';
 import hikr from '../images/hikr.png';
 import fieldr from '../images/fieldr.png';
 import foodenvy from '../images/foodenvy.png';
+import rpg from '../images/rpg.png';
 
 export const PROJECTS = [
     {
@@ -39,6 +40,27 @@ export const PROJECTS = [
         techUsed: 'React, Node, Express, Mongoose, Axios, Google Maps API',
         github: 'https://github.com/edfranco/foodenvy-frontend',
         deployed: 'https://edfranco.github.io/foodenvy-frontend/'
+    },
+    {
+        key: 4,
+        name: 'RPG Remastered',
+        content: `Are you a fan of table 
+        top games like Dungeons and Dragons? 
+        Did you you enjoy games like the Elder Scrolls 
+        Games, Fallout, and The Witcher? Awesome! 
+        This is not the game for you. This is not a 
+        very good RPG but it's a cool concept I wanted 
+        to play with. This game's ambition is to have 
+        the basic RPG elements such as, branching 
+        storylines, quests, and inventory management. 
+        So far this game currently has a dice rolling 
+        mechanic to "roll" a character. The next step is 
+        to create a race mechanic and use that to 
+        calculate hit and damage points`,
+        image: rpg,
+        techUsed: 'React',
+        github: 'https://github.com/edfranco/rpg-remastered',
+        deployed: 'https://edfranco.github.io/rpg-remastered/'
     },
 ];
 
