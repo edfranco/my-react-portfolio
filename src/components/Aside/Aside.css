@@ -8,8 +8,8 @@
     justify-content: flex-start;
     align-items: center;
     overflow: scroll;
-    margin: .5em .1em;
-    padding: .1em;
+    padding: 1em 8em;
+    margin: 0 1em;
 }
 
 .link-card-anchor{
@@ -22,12 +22,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 15em;
-    height:7em;
+    width: 26vw;
+    height:25vh;
     border: 1px solid rgb(221, 221, 221);
     border-radius: 1em; 
     margin-bottom: 2em;
-    padding: .5em 0;
+    /* padding: .5em 0; */
 
 }
 
@@ -57,7 +57,7 @@
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
 .aside{
     display: none;
 }

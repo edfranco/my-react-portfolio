@@ -1,8 +1,7 @@
 .content{
-    grid-column-start: 2;
-    grid-column-end: 3;
     height:90vh;
     margin: 1em 2em;
+    padding: 0 1em;
 }
 
 @media only screen and (max-width: 768px) {

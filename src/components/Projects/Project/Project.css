@@ -1,3 +1,8 @@
+.project{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
 .header{
     display: flex;
     flex-direction: column;
@@ -5,8 +10,7 @@
 }
 
 .header img{
-    width: 35em;
-    height: 15em;
+    width: 90%;
 }
 
 .links{
