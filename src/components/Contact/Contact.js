@@ -3,7 +3,6 @@ import axios from 'axios';
 // internal components
 import ContactErrors from './ContactErrors';
 import { MY_SERVER } from '../../constants/constants';
-import image from '../../images/headshot.jpg'
 
 import './Contact.css';
 
@@ -63,7 +62,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className="contact">
+            <div className="contact container" id="contact">
                 {this.state.errors.length !== 0 && <ContactErrors errors={this.state.errors} />}
                 {this.state.hasMessageSent
                     ? <div className="success-message">
@@ -95,9 +94,6 @@ class Contact extends Component {
                 }
                 <aside className="home-items" id="contact">
                     <h2 className="div-headers">Contact Information</h2>
-
-                    <img src={image} alt="eduardo-franco-cutie-headshot" />
-
                     <h5>Phone: </h5>
                     <p>415-606-0887</p>
                     <h5>email: </h5>

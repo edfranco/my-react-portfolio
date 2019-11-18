@@ -5,7 +5,7 @@ import resume from '../../files/Eduardo-Franco-Resume.pdf';
 
 const Resume = () => {
     return (
-        <section className="resume" id="resume">
+        <section className="resume container" id="resume">
             <div className="resume-top">
                 <h1 className="div-headers">Resume</h1>
                 <a href={resume} download>Download</a>

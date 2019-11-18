@@ -8,7 +8,7 @@ export const PROJECTS = [
     {
         key: 0,
         name: 'My Portfolio',
-        content: "This website itself was built using React. I used flexbox and grid to style for the CSS. I also have a very simple server deployed on heroku that is used to send messages from this site's contact form to my personal email. The github link will send you to a readme and that will link my server repo as well",
+        content: "In case you wanted extra information on my portfolio, here you can find the code used to create this website. I used React for the front-end and it was built using Custom CSS including uses of Flexbox and CSS Grid. Additionally I created a server with Node.js to create a working contact form",
         image: mySite,
         techUsed: 'React, Node, Nodemailer, Heroku',
         github: 'https://github.com/edfranco/my-react-portfolio',

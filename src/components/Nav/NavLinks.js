@@ -6,15 +6,15 @@ const NavLinks = () => {
     return (
         <ul>
             <div className="nav-links" >
-                <NavLink to="/about">
-                    <li>About</li>
-                </NavLink>
-                <NavLink to="/resume">
+                <a href="#portfolio">
+                    <li>Portfolio</li>
+                </a>
+                <a href="#resume">
                     <li>Resume</li>
-                </NavLink>
-                <NavLink to="/contact">
+                </a>
+                <a href="#contact">
                     <li>Contact</li>
-                </NavLink>
+                </a>
             </div>
         </ul>
     );

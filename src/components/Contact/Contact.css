@@ -31,17 +31,6 @@ input{
     margin: 0 auto;
 }
 
-button{
-    height: 5em;
-    width: 10em;
-    background-color: rgb(240, 169, 169);
-    border-radius: 2em;
-}
-button:hover{
-    cursor: pointer;
-    background-color: rgb(245, 208, 208);
-}
-
 @media only screen and (max-width: 768px) {
     .contact {
         margin: 5em 0;

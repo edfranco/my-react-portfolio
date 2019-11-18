@@ -26,8 +26,8 @@ class App extends Component {
         <Nav handleClick={this.handleClick} />
         <MobileMenu handleClick={this.handleClick} displayMenu={this.state.displayMenu} />
         <main>
-          <div className="landing">
-            <img src={headshot} className="headshot" />
+          <div className="landing container" id="landing">
+            <img src={headshot} alt="headshot" className="headshot" />
             <p>Fullstack engineer knowledgable
               in the MERN stack, and Python,
               seeking new opportunities
@@ -35,7 +35,6 @@ class App extends Component {
               collaborative environment. </p>
           </div>
           <Projects />
-          <About />
           <Resume />
           <Contact />
         </main>

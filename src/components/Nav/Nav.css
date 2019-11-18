@@ -3,6 +3,9 @@
 }
 
 nav {
+    top:0;
+    position: fixed;
+    width: 100%;
     height: 10vh;
     background-image: linear-gradient(to right, rgb(255, 125, 125),rgb(255, 175, 155));
     color: white;
@@ -10,6 +13,7 @@ nav {
     justify-content: space-between;
     align-items: flex-end;
     padding: 0 2em;
+    opacity: .8;
 }
 
 nav ul{
@@ -80,7 +84,6 @@ nav a {
         margin: 0;
         padding: 0.5em 1em;
         position: fixed;
-        opacity: .8;
     }
 
     .social-link {
