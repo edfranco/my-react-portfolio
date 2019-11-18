@@ -34,7 +34,7 @@ main {
   font-size: 1.5rem;
 }
 
-main:nth-child(2) {
+main .container:nth-child(odd) {
   background-color: rgb(224, 254, 255);
 }
 
@@ -57,7 +57,8 @@ main .landing{
 }
 
 .landing .headshot{
-  height: 60vh;
+  width: 20vw;
+  padding:1.2em 0;
   max-width: 400px;
   border-radius: 50%;
   margin: 0 0 1em 0;
@@ -70,7 +71,12 @@ main .landing{
 }
 
 .container{
-  margin: 2em;
+  margin: 2em 0;
+  padding: 1em 2em;
+}
+
+.container:nth-child(1){
+  margin-top:1em;
 }
 @media only screen and (max-width: 768px) { 
   main {

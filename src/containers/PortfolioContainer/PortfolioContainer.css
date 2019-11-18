@@ -88,6 +88,12 @@
     cursor: pointer;
 }
 
+.technologies div{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+}
+
 @media only screen and (max-width: 768px) {
     .project-images{
         display: flex;

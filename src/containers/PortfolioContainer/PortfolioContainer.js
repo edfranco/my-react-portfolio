@@ -35,13 +35,17 @@ class PortfolioContainer extends Component {
 
     render() {
         return (
-            <div className="portfolio" id="portfolio">
+            <div className="portfolio container" id="portfolio">
                 <h2 className="div-headers">{this.state.project.name}</h2>
                 <div className="project-images">
                     {this.projectImgs()}
                 </div>
                 <div className="overlay" style={{ display: this.state.shouldDisplayProjectOverlay ? 'flex' : 'none' }}>
                     <div className="close" onClick={this.handleClick}>X</div>
+                    <div className="technologies">
+                        <h4 className="div-headers">Technologies Used:</h4>
+                        <div>{this.state.project.techUsed}</div>
+                    </div>
                     <img src={this.state.project.image} alt={this.state.project.name} />
                     <p>{this.state.project.content}</p>
                     <div className="project-buttons">
