@@ -13,7 +13,7 @@
     background-color: rgb(221, 221, 221);
     color: rgb(0, 0, 0);
     border: 1px solid rgb(245, 245, 245);
-    margin: 2em 7em;
+    margin: 2em 5em;
     padding: 1em;
     line-height: 1.5em;
 }
@@ -31,6 +31,12 @@
     border: 1px solid rgb(245, 245, 245);
 }
 
+.project-container:hover{
+    cursor: pointer;
+    width: 41vw;
+    background-color: rgb(200, 200, 200);
+}
+
 .project-container h2{
     font-size: 2rem;
 }
@@ -44,19 +50,62 @@
     justify-content: space-between;
 }
 
+.overlay{
+    position: fixed;
+    overflow: scroll;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(70, 70, 70, 0.8);
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+}
+
+.overlay h1{
+    color: white;
+    opacity: 1;
+}
+
+.overlay img{
+    width: 50%;
+    min-width: 500px;
+    max-width: 700px;
+}
+
+.close{
+    position: absolute;
+    top:0;
+    right:0;
+    margin:1em;
+    color: white;
+    font-size: 2em;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
-    .portfolio-container{
+    .project-images{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        margin: 4em 0;
+        margin: 0;
     }
-    .see-more{
-        display: block;
-        position: fixed;
-        bottom: 0;
-        opacity: .7;
 
+    .project-container{
+        width: 90%;
+    }
+    .overlay img{
+        width: 50%;
+        max-width: 600px;
+    }
+
+    .portfolio p{
+        margin: 2em 0;
     }
 }

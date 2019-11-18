@@ -4,7 +4,6 @@ import Nav from './components/Nav/Nav';
 import MobileMenu from './components/MobileMenu/MobileMenu';
 import headshot from './images/headshot.jpg';
 import Projects from './containers/PortfolioContainer/PortfolioContainer';
-import About from './components/About/About';
 import Resume from './components/Resume/Resume';
 import Contact from './components/Contact/Contact';
 import './App.css';
