@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import axios from 'axios';
 // internal components
 import ContactErrors from './ContactErrors';
+import { MY_SERVER } from '../../constants/constants';
+import image from '../../images/headshot.jpg'
 
 import './Contact.css';
-
-import { MY_SERVER } from '../../constants/constants';
-
-import image from '../../images/headshot.jpg'
 
 class Contact extends Component {
     state = {
@@ -31,9 +29,7 @@ class Contact extends Component {
             message: this.state.message,
             name: this.state.name,
         }, { withCredentials: true }
-        )
-            .then(response => console.log(response))
-            .catch(error => console.log(error.response));
+        );
     };
 
     handleChange = event => {
@@ -105,10 +101,9 @@ class Contact extends Component {
                     <h5>Phone: </h5>
                     <p>415-606-0887</p>
                     <h5>email: </h5>
-                    <p>ed@eduardofranco.me</p>
+                    <p>edfranco415@gmail.com</p>
                 </aside>
             </div>
-
         );
     };
 };

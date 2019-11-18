@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Resume.css';
-import resume from '../../files/resume.docx';
+import resume from '../../files/Eduardo-Franco-Resume.pdf';
 
 const Resume = () => {
     return (

@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 // internal components
 import Nav from './components/Nav/Nav';
 import MobileMenu from './components/MobileMenu/MobileMenu';
-import Routes from './config/Router';
+import headshot from './images/headshot.jpg';
+import Projects from './containers/PortfolioContainer/PortfolioContainer';
+import About from './components/About/About';
+import Resume from './components/Resume/Resume';
+import Contact from './components/Contact/Contact';
 import './App.css';
 
 
@@ -22,7 +26,18 @@ class App extends Component {
         <Nav handleClick={this.handleClick} />
         <MobileMenu handleClick={this.handleClick} displayMenu={this.state.displayMenu} />
         <main>
-          <Routes />
+          <div className="landing">
+            <img src={headshot} className="headshot" />
+            <p>Fullstack engineer knowledgable
+              in the MERN stack, and Python,
+              seeking new opportunities
+              in an engaging and open
+              collaborative environment. </p>
+          </div>
+          <Projects />
+          <About />
+          <Resume />
+          <Contact />
         </main>
       </div>
     );

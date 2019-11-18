@@ -16,8 +16,12 @@ body {
 }
 
 main {
-  margin: 0;
+  margin: 0 auto;
   font-size: 1.5rem;
+}
+
+main:first-child{
+  margin-top:1em;
 }
 
 .div-headers {
@@ -28,6 +32,28 @@ main {
 
 main .home-items {
   padding: 0 1em;
+}
+
+main .landing{
+  background-color: rgb(224, 254, 255);
+  padding:1em 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.landing .headshot{
+  height: 60vh;
+  max-width: 400px;
+  border-radius: 50%;
+  margin: 0 0 1em 0;
+}
+
+.landing p {
+  line-height: 1.6em;
+  font-size: 2em;
+  color: rgb(14, 14, 14);
 }
 
 aside.home-items {
