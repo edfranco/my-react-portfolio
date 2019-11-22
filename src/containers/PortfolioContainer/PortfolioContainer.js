@@ -18,7 +18,10 @@ class PortfolioContainer extends Component {
         if (id) {
             this.setState({ project: this.state.projects[id] });
         };
-        this.setState({ shouldDisplayProjectOverlay: !this.state.shouldDisplayProjectOverlay });
+        this.setState({
+            shouldDisplayProjectOverlay: !this.state.shouldDisplayProjectOverlay,
+            imageIndex: 0
+        });
     };
 
     projectImgs = () => {
@@ -32,6 +35,18 @@ class PortfolioContainer extends Component {
             );
         });
         return images;
+    };
+
+    incrementImageIndex = () => {
+        const nextIndex = this.state.imageIndex + 1;
+        const hasPassedLength = nextIndex > this.state.project.images.length - 1;
+        this.setState({ imageIndex: hasPassedLength ? 0 : nextIndex });
+    };
+
+    decrementIndex = () => {
+        const prevIndex = this.state.imageIndex - 1;
+        const indexBelowZero = this.state.imageIndex <= 0;
+        this.setState({ imageIndex: indexBelowZero ? this.state.project.images.length - 1 : prevIndex });
     };
 
     render() {
@@ -48,10 +63,11 @@ class PortfolioContainer extends Component {
                         <div>{this.state.project.techUsed}</div>
                     </div>
                     <img src={this.state.project.images[this.state.imageIndex]} alt={this.state.project.name} />
-                    <div className="arrow-container">
-                        <i class="arrows fas fa-arrow-left"></i>
-                        <i class="arrows fas fa-arrow-right"></i>
-                    </div>
+                    {this.state.project.images.length > 1
+                        && <div className="arrow-container">
+                            <i onClick={this.decrementIndex} className="arrows fas fa-arrow-left"></i>
+                            <i onClick={this.incrementImageIndex} className="arrows fas fa-arrow-right"></i>
+                        </div>}
                     <p>{this.state.project.content}</p>
                     <div className="project-buttons">
                         <a href={this.state.project.deployed}>
