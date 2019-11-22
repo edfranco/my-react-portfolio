@@ -1,8 +1,16 @@
 import mySite from '../images/my-site.png';
-import hikr from '../images/hikr.png';
-import fieldr from '../images/fieldr.png';
-import foodenvy from '../images/foodenvy.png';
-import rpg from '../images/rpg.png';
+import hikr from '../images/hikr/hikr.png';
+import hikr1 from '../images/hikr/hikr1.png';
+import hikr2 from '../images/hikr/hikr2.png';
+import hikr3 from '../images/hikr/hikr3.png';
+import fieldr from '../images/fieldr/fieldr.png';
+import fieldr2 from '../images/fieldr/fieldr2.png';
+import fieldr3 from '../images/fieldr/fieldr3.png';
+import foodenvy from '../images/foodenvy/foodenvy.png';
+import foodenvy2 from '../images/foodenvy/foodenvy2.png';
+import foodenvy3 from '../images/foodenvy/foodenvy3.png';
+import foodenvy4 from '../images/foodenvy/foodenvy4.png';
+import rpg from '../images/rpg/rpg.png';
 
 export const PROJECTS = [
     {
@@ -18,7 +26,7 @@ export const PROJECTS = [
         key: 1,
         name: 'Fieldr',
         content: 'A full stack app built using HTML, CSS, and JavaScript for the front-end and Node, Express, and Mongoose for the backend.',
-        images: [fieldr],
+        images: [fieldr, fieldr2, fieldr3],
         techUsed: 'HTML, CSS, JavaScript, Node, Express, Mongoose, Fetch',
         github: 'https://github.com/edfranco/fieldr',
         deployed: 'https://gofieldr.herokuapp.com/'
@@ -27,7 +35,7 @@ export const PROJECTS = [
         key: 2,
         name: 'Hikr',
         content: 'A full stack app built using HTML, CSS, and JavaScript for the front-end and Python for the backend using Django.',
-        images: [hikr],
+        images: [hikr, hikr1, hikr2, hikr3],
         techUsed: 'HTML, CSS, JavaScript, Python, Django, Bootstrap',
         github: 'https://github.com/edfranco/hikr',
         deployed: 'https://go-hikr.herokuapp.com/'
@@ -36,7 +44,7 @@ export const PROJECTS = [
         key: 3,
         name: 'FoodEnvy',
         content: 'A social media site built over 7 days. This site was built using the MERN stack. This site is built upon users posting photos of food they ate and what restaurant they ate it at. These restauarants have a profile as well that show all their posts',
-        images: [foodenvy],
+        images: [foodenvy, foodenvy2, foodenvy3, foodenvy4],
         techUsed: 'React, Node, Express, Mongoose, Axios, Google Maps API',
         github: 'https://github.com/edfranco/foodenvy-frontend',
         deployed: 'https://edfranco.github.io/foodenvy-frontend/'

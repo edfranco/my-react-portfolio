@@ -9,7 +9,8 @@ class PortfolioContainer extends Component {
     state = {
         projects: PROJECTS,
         project: PROJECTS[0],
-        shouldDisplayProjectOverlay: false
+        shouldDisplayProjectOverlay: false,
+        imageIndex: 0
     };
 
     handleClick = event => {
@@ -46,7 +47,7 @@ class PortfolioContainer extends Component {
                         <h4 className="div-headers">Technologies Used:</h4>
                         <div>{this.state.project.techUsed}</div>
                     </div>
-                    <img src={this.state.project.images} alt={this.state.project.name} />
+                    <img src={this.state.project.images[this.state.imageIndex]} alt={this.state.project.name} />
                     <div className="arrow-container">
                         <i class="arrows fas fa-arrow-left"></i>
                         <i class="arrows fas fa-arrow-right"></i>

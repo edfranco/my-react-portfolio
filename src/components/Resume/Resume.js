@@ -55,11 +55,8 @@ const Resume = () => {
             <div className="ga">
                 <h5>General Assembly</h5>
                 <h5>Software Engineering</h5>
-                <p>Studied software engineering topics based both on front-end and back-end development. We got an education
-                on development languages such as HTML, CSS, JacaScript, Python. Studied frameworks such as Bootstrap,
-                JQuery, MondoDB, and React. We
-                also learned how to use tools like APIs, Git, etc. We implemented this training on labs, homework and
-                projects, some of which can be seen on this website</p>
+                <p>Studied software engineering topics based both on full-stack engineering. Worked on skills based on
+                on development languages such as HTML, CSS, JacaScript, and Python. Studied frameworks and libraries such as Bootstrap, jQuery, Node, Express, Mongoose, SQL, Django, Flask, React and Redux.</p>
             </div>
         </section >
     );
