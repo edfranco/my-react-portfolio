@@ -36,7 +36,7 @@ class PortfolioContainer extends Component {
     render() {
         return (
             <div className="portfolio container" id="portfolio">
-                <h2 className="div-headers">{this.state.project.name}</h2>
+                <h2 className="div-headers">My Portfolio</h2>
                 <div className="project-images">
                     {this.projectImgs()}
                 </div>

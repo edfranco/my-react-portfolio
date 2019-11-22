@@ -5,7 +5,7 @@
 }
 
 body {
-  background:rgb(255, 255, 255);
+  background:rgb(255, 242, 214);
   font-family: sans-serif;
   text-align: none;
   color: black;
@@ -39,8 +39,8 @@ main .container:nth-child(odd) {
 }
 
 .div-headers {
-  color: rgb(255, 125, 125);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: rgb(0,0,0);
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
 }
 
 

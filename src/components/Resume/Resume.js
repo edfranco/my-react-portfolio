@@ -47,21 +47,20 @@ const Resume = () => {
             </ul>
 
             <h2 className="div-headers">Education</h2>
+            <div className="ccsf">
+                <h5>City College of San Francisco</h5>
+                <h5>Computer Science </h5>
+                <p>Finished two years of Computer Science and Computer Information Technology based curriculum towards an Associate of Science degree.</p>
+            </div>
             <div className="ga">
                 <h5>General Assembly</h5>
                 <h5>Software Engineering</h5>
-            </div>
-            <p>Studied software engineering topics based both on front-end and back-end development. We got an education
+                <p>Studied software engineering topics based both on front-end and back-end development. We got an education
                 on development languages such as HTML, CSS, JacaScript, Python. Studied frameworks such as Bootstrap,
                 JQuery, MondoDB, and React. We
                 also learned how to use tools like APIs, Git, etc. We implemented this training on labs, homework and
                 projects, some of which can be seen on this website</p>
-
-            <div className="ccsf">
-                <h5>City College of San Francisco</h5>
-                <h5>Computer Science </h5>
             </div>
-            <p>Completed 30 credits worth of classes based on general education while working towards a computer science AA</p>
         </section >
     );
 };
