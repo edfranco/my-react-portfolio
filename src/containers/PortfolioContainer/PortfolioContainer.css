@@ -88,6 +88,21 @@
     cursor: pointer;
 }
 
+.arrow-container{
+    width: 50%;
+    min-width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows{
+    color: white;
+}
+
+.arrows:hover{
+    cursor: pointer;
+}
+
 .technologies div{
     display: flex;
     justify-content: flex-start;

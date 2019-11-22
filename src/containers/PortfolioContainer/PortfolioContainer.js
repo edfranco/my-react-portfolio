@@ -26,7 +26,7 @@ class PortfolioContainer extends Component {
             images.push(
                 <div key={project.key} className={`project-container`} id={project.key} onClick={this.handleClick}>
                     <h2 className={`div-headers`} id={project.key}>{project.name}</h2>
-                    <img id={project.key} src={project.image} alt={project.name} />
+                    <img id={project.key} src={project.images[0]} alt={project.name} />
                 </div>
             );
         });
@@ -46,7 +46,11 @@ class PortfolioContainer extends Component {
                         <h4 className="div-headers">Technologies Used:</h4>
                         <div>{this.state.project.techUsed}</div>
                     </div>
-                    <img src={this.state.project.image} alt={this.state.project.name} />
+                    <img src={this.state.project.images} alt={this.state.project.name} />
+                    <div className="arrow-container">
+                        <i class="arrows fas fa-arrow-left"></i>
+                        <i class="arrows fas fa-arrow-right"></i>
+                    </div>
                     <p>{this.state.project.content}</p>
                     <div className="project-buttons">
                         <a href={this.state.project.deployed}>

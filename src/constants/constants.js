@@ -9,7 +9,7 @@ export const PROJECTS = [
         key: 0,
         name: 'My Portfolio',
         content: "In case you wanted extra information on my portfolio, here you can find the code used to create this website. I used React for the front-end and it was built using Custom CSS including uses of Flexbox and CSS Grid. Additionally I created a server with Node.js to create a working contact form",
-        image: mySite,
+        images: [mySite],
         techUsed: 'React, Node, Nodemailer, Heroku',
         github: 'https://github.com/edfranco/my-react-portfolio',
         deployed: 'http://eduardofranco.me'
@@ -18,7 +18,7 @@ export const PROJECTS = [
         key: 1,
         name: 'Fieldr',
         content: 'A full stack app built using HTML, CSS, and JavaScript for the front-end and Node, Express, and Mongoose for the backend.',
-        image: fieldr,
+        images: [fieldr],
         techUsed: 'HTML, CSS, JavaScript, Node, Express, Mongoose, Fetch',
         github: 'https://github.com/edfranco/fieldr',
         deployed: 'https://gofieldr.herokuapp.com/'
@@ -27,7 +27,7 @@ export const PROJECTS = [
         key: 2,
         name: 'Hikr',
         content: 'A full stack app built using HTML, CSS, and JavaScript for the front-end and Python for the backend using Django.',
-        image: hikr,
+        images: [hikr],
         techUsed: 'HTML, CSS, JavaScript, Python, Django, Bootstrap',
         github: 'https://github.com/edfranco/hikr',
         deployed: 'https://go-hikr.herokuapp.com/'
@@ -36,7 +36,7 @@ export const PROJECTS = [
         key: 3,
         name: 'FoodEnvy',
         content: 'A social media site built over 7 days. This site was built using the MERN stack. This site is built upon users posting photos of food they ate and what restaurant they ate it at. These restauarants have a profile as well that show all their posts',
-        image: foodenvy,
+        images: [foodenvy],
         techUsed: 'React, Node, Express, Mongoose, Axios, Google Maps API',
         github: 'https://github.com/edfranco/foodenvy-frontend',
         deployed: 'https://edfranco.github.io/foodenvy-frontend/'
@@ -57,7 +57,7 @@ export const PROJECTS = [
         mechanic to "roll" a character. The next step is 
         to create a race mechanic and use that to 
         calculate hit and damage points`,
-        image: rpg,
+        images: [rpg],
         techUsed: 'React',
         github: 'https://github.com/edfranco/rpg-remastered',
         deployed: 'https://edfranco.github.io/rpg-remastered/'
